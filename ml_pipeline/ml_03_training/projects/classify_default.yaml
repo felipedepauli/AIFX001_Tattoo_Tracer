@@ -1,0 +1,23 @@
+training:
+  learning_rate         : 0.001
+  epochs                : 3
+  batch_size            : 4
+  model_type            : "tattoo_classification"
+  train_path            : "/data/sample/train"
+  val_path              : "/data/sample/val"
+  test_path             : "/data/sample/test"
+  steps_per_epoch       : 10
+  early_stop            : true
+
+  cross_validation:
+    enabled             : false
+    k_folds             : 5
+    
+  data_augmentation:
+    enabled             : true
+    rotation_range      : 30
+    width_shift_range   : 0.2
+    height_shift_range  : 0.2
+    shear_range         : 0.2
+    zoom_range          : 0.2
+    horizontal_flip     : true

@@ -1,0 +1,23 @@
+training:
+  learning_rate         : 0.000001
+  epochs                : 200
+  batch_size            : 4
+  model_type            : "tattoo_detection"
+  full_path             : "/home/fpauli/git/projects/windows/tattoo_trace/ml_pipeline/ml_02_data_ready/datasets/tattoo_trace/detection/"
+  train_path            : ""
+  val_path              : ""
+  test_path             : ""
+  early_stop            : False
+
+  cross_validation:
+    enabled             : false
+    k_folds             : 5
+
+  data_augmentation:
+    enabled             : true
+    rotation_range      : 30
+    width_shift_range   : 0.2
+    height_shift_range  : 0.2
+    shear_range         : 0.2
+    zoom_range          : 0.2
+    horizontal_flip     : true
